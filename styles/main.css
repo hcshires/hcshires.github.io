@@ -4,12 +4,6 @@ body {
   background-color: white;
   margin: 0;
   overflow-x: hidden;
-  padding-top: 120px;
-}
-
-.verticalAlign {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 h1,
@@ -46,7 +40,6 @@ ul {
   }
 
   hr {
-    padding: 20px 0px;
     width: auto;
   }
 }
@@ -80,7 +73,6 @@ ul {
 
   hr {
     width: 50%;
-    padding: 50px 0px;
   }
 }
 
@@ -118,29 +110,13 @@ footer hr {
   border-left: 68px solid #2fafff;
 }
 
-.navbar-row {
-  background-color: white !important;
-  -webkit-transition-duration: 0.5s; /* Safari */
-  transition-duration: 0.5s;
-  transition: 0.5s;
+.navbar {
+  background-color: white;
   box-shadow: 0 5px 5px 0 rgba(76, 82, 103, 0.1);
-}
-
-.navbar-nav {
-  font-size: 18px !important;
-  color: #676767 !important;
 }
 
 .navbar-brand {
   color: #676767 !important;
-}
-
-.navbar-nav .nav-link {
-  margin-top: auto;
-  margin-bottom: auto;
-  -webkit-transition-duration: 0.5s; /* Safari */
-  transition-duration: 0.5s;
-  transition: 0.5s;
 }
 
 .navbar-nav .nav-link:hover {
@@ -159,7 +135,7 @@ footer hr {
   border: none !important;
 }
 
-.section-blue {
+.blue {
   background-color: #2fafff;
 }
 
@@ -170,59 +146,46 @@ footer hr {
   border-radius: 8px !important;
 }
 
-.button1 {
-  background-color: transparent;
-  border: 3px solid white;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
-  -webkit-transition-duration: 0.5s; /* Safari */
-  transition-duration: 0.5s;
-  transition: 0.5s;
-  border-radius: 8px;
+.btn-outline-primary {
+  background-color: transparent !important;
+  border: 3px solid #2fafff !important;
+  border-radius: 8px !important;
+  color: #2fafff !important;
 }
 
-.button1:hover {
-  color: #676767;
-  cursor: pointer;
+.btn-outline-primary:hover {
+  color: white !important;
 }
 
-.button2 {
-  background-color: transparent;
-  border: 3px solid #2fafff;
-  color: #2fafff;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
-  -webkit-transition-duration: 0.5s; /* Safari */
-  transition-duration: 0.5s;
-  transition: 0.5s;
-  border-radius: 8px;
+.btn-outline-light {
+  background-color: transparent !important;
+  border: 3px solid white !important;
+  padding: 15px 32px !important;
+  border-radius: 8px !important;
 }
 
-.button2:hover {
-  color: white;
-  cursor: pointer;
+.btn-outline-light:hover {
+  color: #676767 !important;
+}
+
+/* Henry Profile Image */
+.feature {
+  box-shadow: 10px 10px 10px #eee !important;
+  min-height: calc(100vh - 100px);
+  padding: 20px 0;
 }
 
 .bordered-img {
   position: relative;
   box-shadow: 10px 10px 10px #008ee6 !important;
-  border-radius: 8px;
   border: 5px solid white;
-  margin-bottom: 50px;
+  border-radius: 8px;
 }
 
 .bordered-img:hover {
   box-shadow: 20px 20px 20px #008ee6 !important;
 }
-
-.feature {
-  position: relative;
-  box-shadow: 10px 10px 10px #eee !important;
-  margin-bottom: 50px;
-}
+/**/
 
 @media (min-width: 0px) {
   .divider {
@@ -253,13 +216,12 @@ footer hr {
   padding: 25px 0px;
   border-radius: 8px !important;
   border: 1px solid #ddd !important;
-  box-shadow: 0 0 10px #ccc !important;
   transition: ease 0.2s;
 }
 
 .card:hover {
   transition: ease 0.2s;
-  box-shadow: 0 0px 50px #ccc !important;
+  box-shadow: 0 0px 10px #ccc !important;
   border-color: transparent !important;
   cursor: pointer;
 }
@@ -269,10 +231,47 @@ footer hr {
 }
 
 .card-image {
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 8px !important;
 }
 
 .svg-icon {
   display: inline-block;
   vertical-align: middle;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.blink {
+  border-bottom: 0.05em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
 }

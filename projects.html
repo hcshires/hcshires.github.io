@@ -15,11 +15,10 @@
         content="Henry Shires, hcshires, henry, shires, portfolio, project page, software, engineering, IT solutions, cinematography">
     <meta property="og:title" content="Projects | Henry Shires">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://hcshires.github.io/images/portrait.jpg">
+    <meta property="og:image" content="https://hcshires.github.io/images/portfolio.jpg">
     <meta property="og:url" content="https://hcshires.github.io/projects">
     <meta property="og:description"
         content="I've designed and built multiple webapps, programs, and integrations. View my featured ones below.">
-    <title>Projects | Henry Shires</title>
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -32,6 +31,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-N6DPRZQ');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Page styles -->
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" type="text/css" href="./styles/hover/hover-min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/hover/hover.css" />
@@ -39,11 +39,16 @@
     <link rel="apple-touch-icon" href="./images/favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Fonts and Transitions -->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.min.css" />
+
+    <title>Projects | Henry Shires</title>
 </head>
 
 <body>
@@ -52,245 +57,283 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="col-12 navbar-row fixed-top">
-                <div class="col-md-10 offset-md-1">
-                    <nav class="navbar navbar-light navbar-expand-lg">
-                        <a class="navbar-brand verticalAlign" href="./index.html" style="float: left;">
-                            <img src="./images/hcshires.png" width="100" height="100"
-                                class="d-inline-block align-center" alt="Henry Shires logo">
-                            <h4 class="d-none d-md-inline">Henry Shires</h4>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contact.html">Contact</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="./projects.html">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./organizations.html">Organizations</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./media.html">Media</a>
-                                </li>
-                            </ul>
-                            <button type="button" class="button2 hvr-sweep-to-right-blue nav-link"
-                                onclick="window.open('https://github.com/hcshires', '_blank');">GitHub</button>
-                        </div>
-                    </nav>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/#"><img src="./images/hcshires.png" height="75"
+                    class="d-inline-block align-center" alt="Henry Shires logo">
+                <h4 class="d-none d-md-inline">Henry Shires</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./organizations.html">Organizations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./media.html">Media</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-primary nav-link hvr-sweep-to-right-blue"
+                    onclick="window.open('https://github.com/hcshires', '_blank');">GitHub</button>
             </div>
         </div>
-        <div class="row h-100" style="padding: 75px 0px">
-            <div class="col-10 offset-1 verticalAlign ld ld-float-btt-in">
+    </nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center ld ld-float-btt-in" style="margin-top: 75px">
+            <div class="col-10">
                 <h1 style="color: #676767 !important" class="underline-right text-center">My Projects</h1>
-                <h3 class="text-center" style="color: #676767 !important; padding: 20px 0px;">I've designed and built
-                    multiple webapps, programs, and integrations. View my featured ones below.</h3>
+                <h3 class="text-center" style="color: #676767 !important; padding: 20px 0px;">See what I've been up to
+                    so far.</h3>
                 <hr>
             </div>
-            <div class="order-2 order-md-1 col-10 offset-1 col-md-4 offset-md-2 verticalAlign ld ld-float-btt-in">
-                <h2 class="underline-blue" style="color: #2fafff">Casmium - Sports Analytics Software</h2>
-                <p>The original idea for Casmium was initially pitched by my high school baseball
-                    team, with their goal in mind to have a way to store data from their games and make it easily
-                    accessible for use in the postseason. I collaborated with three other classmates as well as various
-                    helpers with marketing to create a webapp matching their feature requests. Due to its success,
-                    Casmium is now being marketed to teams all across Central Iowa with hopes of expansion to other
-                    sports and an increase in features.</p>
-                <p style="color: #2fafff; font-weight: bold;">Technical Specifications</p>
-                <ul>
-                    <li>Languages: React.js (website), React Native (mobile app), Node.js (server-side code), HTML/CSS
-                    </li>
-                    <li>APIs: Google Firebase (auth, databasing, and hosting), Google Charts (data visualization)</li>
-                    <li>Project Duration: February 2020-Present</li>
-                </ul>
-                <button type="button" class="button2 hvr-sweep-to-right-blue"
-                    onclick="window.open('https://casmium.com', '_blank');">View
-                    Project</button>
-            </div>
-            <div class="order-1 order-md-2 col-10 offset-1 col-md-4 offset-md-0 verticalAlign ld ld-float-btt-in">
-                <img class="img-fluid" src="./images/casmium.png" style="margin-bottom: 20px;">
-            </div>
-            <div class="order-3 col-12 divider"></div>
-            <div class="order-4 col-10 offset-1 col-md-4 offset-md-2 verticalAlign ld ld-float-btt-in">
-                <img class="img-fluid" src="./images/antivirus.png" style="margin-bottom: 20px;">
-            </div>
-            <div class="order-5 col-10 offset-1 col-md-4 offset-md-0 verticalAlign ld ld-float-btt-in">
-                <h2 class="underline-blue" style="color: #2fafff">Orion Antivirus - Malware Removal Tool for Windows
-                </h2>
-                <p>My antivirus program features a simple algorithm that reads a text file for
-                    sample MD5 hashes of known malware, compares it to a file the user has selected from their computer,
-                    and determines if it matches a virus. The user then has the option to delete the file from the
-                    computer if the program determines it is malware. I used the Cryptography library built into .NET
-                    and created a simple Windows Form with branding to make the program look appealing.</p>
-                <p style="color: #2fafff; font-weight: bold;">Technical Specifications</p>
-                <ul>
-                    <li>Language: Visual C#</li>
-                    <li>Project Duration: October-November 2019</li>
-                </ul>
-                <button type="button" class="button2 hvr-sweep-to-right-blue"
-                    onclick="window.open('https://github.com/hcshires/Orion-Antivirus/releases/tag/v1.0.0', '_blank');">View
-                    Project</button>
-            </div>
-            <div class="order-6 col-12 divider"></div>
-            <div class="order-8 order-md-7 col-10 offset-1 col-md-4 offset-md-2 verticalAlign ld ld-float-btt-in">
-                <h2 class="underline-blue" style="color: #2fafff">Estafeta Virtual Airline - Website and Flight Tracking
-                    Program</h2>
-                <p style="color: #676767">I was commissioned to create a web platform and flight
-                    tracking software for a virtual airline&mdash;an online group of people who
-                    simulate the operations and flights of an airline on a multiplayer flight simulation network. The
-                    airline is based off of the real-life Mexican mail service, Estafeta, and required me to inherit
-                    Estafeta's color
-                    scheme, fleet, and other operations specifics. I am still currently in charge of the Estafeta
-                    Virtual's web
-                    hosting, website content, and platform updates.</p>
-                <p style="color: #2fafff; font-weight: bold;">Technical Specifications</p>
-                <ul>
-                    <li>Languages: The web platform uses <a style="color: #2fafff;" href="https://phpvms.net/new"
-                            target="_blank">phpVMS.net</a>: a Lavarel/PHP-based webapp that is used to manage virtual
-                        airline operations and flights. I customized phpVMS to our needs using HTML/CSS, Lavarel, and a
-                        bit of JavaScript. For the flight tracking program, I contributed to an existing, open-source
-                        program written in
-                        Python to accelerate the project's completion.</li>
-                    </li>
-                    <li>Project Duration: July-August 2020, although I am still actively involved in the virtual
-                        airline's operations.</li>
-                </ul>
-                <button type="button" class="button2 hvr-sweep-to-right-blue"
-                    onclick="window.open('https://estafetava.com', '_blank');">View
-                    Project</button>
-            </div>
-            <div class="order-7 order-md-8 col-10 offset-1 col-md-4 offset-md-0 verticalAlign ld ld-float-btt-in">
-                <img class="img-fluid" src="./images/estafeta.png" style="margin-bottom: 20px;">
-            </div>
         </div>
-    </div>
-    <div class="row h-100 section-blue text-center" style="padding: 50px 0px">
-        <div class="col-10 offset-1 ld ld-float-btt-in">
-            <h1 style="color: white">Games</h1>
-            <h3 style="color: white">I additionally created two games: one in JavaScript and the other in Unity 3D. You
-                can view each below<br />(not designed for mobile devices).</h3>
-        </div>
-    </div>
-    <div class="row h-100 text-center" style="padding: 100px 0px">
-        <div class="col-10 offset-1 col-md-4 offset-md-2 d-flex align-items-stretch ld ld-float-btt-in"
-            style="margin-bottom: 40px">
-            <div class="card">
-                <img class="card-img-top" src="./images/brickmash.png" alt="Atari Breakout screenshot">
-                <div class="card-body">
-                    <h5 class="card-title">Brickmash (Atari Breakout)</h5>
-                    <p class="card-text">A simple version of Atari Breakout built in JS several years ago. This was one
-                        of my very first programs and I still enjoy it to this day (despite the aging code).</p>
-                    <button onclick="window.location.href='./games/brickmash/index.html';"
-                        class="button2 hvr-sweep-to-right-blue verticalAlign">Play Game</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-10 offset-1 col-md-4 offset-md-0 d-flex align-items-stretch ld ld-float-btt-in"
-            style="margin-bottom: 40px">
-            <div class="card">
-                <img class="card-img-top" src="./images/feed-the-ball.jpg" alt="Feed The Ball screenshot">
-                <div class="card-body">
-                    <h5 class="card-title">Feed The Ball</h5>
-                    <p class="card-text">Feed The Ball was my introduction to the world of Unity 3D game design and C#
-                        programming. My goal was to create a simple, yet entertaining, 3D platformer and later on
-                        submitted this project to the College Board for the AP Computer Science Principles exam.</p>
-                    <button onclick="window.location.href='./games/feed-the-ball/index.html';"
-                        class="button2 hvr-sweep-to-right-blue verticalAlign">Play Game</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row h-100 section-blue text-center" style="padding: 50px 0px">
-        <div class="col-10 offset-1 ld ld-float-btt-in">
-            <h1 style="color: white">Other Projects</h1>
-            <h3 style="color: white">View other stuff I've worked on for school or in my spare-spare time.</h3>
-        </div>
-    </div>
-    <div class="row h-100 text-center justify-content-center align-items-center" style="padding: 100px 0px">
-        <div class="col-10">
-            <div class="card d-flex align-items-stretch">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img class="img-fluid card-image" src="./images/exivue.png">
+        <div class="container">
+            <div class="row row-cols-1 text-center ld ld-float-btt-in" style="margin: 75px 0">
+                <div class="card mb-3">
+                    <div class="row g-0 justify-content-around align-items-center">
+                        <div class="col-md-4">
+                            <img class="img-fluid card-image" src="./images/casmium.png">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title" style="color: #2fafff">Casmium - Sports Analytics Software</h2>
+                                <p>The original idea for Casmium was initially pitched by my high school baseball
+                                    team, with their goal in mind to have a way to store data from their games and make
+                                    it
+                                    easily
+                                    accessible for use in the postseason. I collaborated with three other classmates as
+                                    well
+                                    as various
+                                    helpers with marketing to create a webapp matching their feature requests. Due to
+                                    its
+                                    success,
+                                    Casmium is now being marketed to teams all across Central Iowa with hopes of
+                                    expansion
+                                    to other
+                                    sports and an increase in features.</p>
+                                <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
+                                    Specifications
+                                </p>
+                                <ul class="text-start">
+                                    <li>Languages: React.js (website), React Native (mobile app), Node.js (server-side
+                                        code), HTML/CSS
+                                    </li>
+                                    <li>APIs: Google Firebase (auth, databasing, and hosting), Google Charts (data
+                                        visualization)</li>
+                                    <li>Project Duration: February 2020-Present</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
+                                    onclick="window.open('https://casmium.com', '_blank');">View
+                                    Project</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">ExiVue - Existentialism Visualizer</h5>
-                            <p class="card-text">An interactive visualizer on the concept of Existentialism for
-                                educational or recreational use. I created this project for one of my high school
-                                teachers to use in her future Language Arts classes.</p>
-                            <button onclick="window.open('https://hcshires.github.io/exivue', '_blank');"
-                                class="button2 hvr-sweep-to-right-blue verticalAlign">View Project</button>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 justify-content-around align-items-center">
+                        <div class="col-md-4">
+                            <img class="img-fluid card-image" src="./images/antivirus.png">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title">Orion Antivirus - Malware Removal Tool for Windows</h2>
+                                <p>My antivirus program features a simple algorithm that reads a text file for
+                                    sample MD5 hashes of known malware, compares it to a file the user has selected from
+                                    their computer,
+                                    and determines if it matches a virus. The user then has the option to delete the
+                                    file
+                                    from the
+                                    computer if the program determines it is malware. I used the Cryptography library
+                                    built
+                                    into .NET
+                                    and created a simple Windows Form with branding to make the program look appealing.
+                                </p>
+                                <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
+                                    Specifications
+                                </p>
+                                <ul class="text-start">
+                                    <li>Language: Visual C#</li>
+                                    <li>Project Duration: October-November 2019</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
+                                    onclick="window.open('https://github.com/hcshires/Orion-Antivirus/releases/tag/v1.0.0', '_blank');">View
+                                    Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 justify-content-around align-items-center">
+                        <div class="col-md-4">
+                            <img class="img-fluid card-image" src="./images/estafeta.png">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title">Estafeta Virtual Airline - Website and Flight Tracking Program
+                                </h2>
+                                <p style="color: #676767">I was commissioned to create a web platform and flight
+                                    tracking software for a virtual airline&mdash;an online group of people who
+                                    simulate the operations and flights of an airline on a multiplayer flight simulation
+                                    network. The
+                                    airline is based off of the real-life Mexican mail service, Estafeta, and required
+                                    me to
+                                    inherit
+                                    Estafeta's color
+                                    scheme, fleet, and other operations specifics. I am still currently in charge of the
+                                    Estafeta
+                                    Virtual's web
+                                    hosting, website content, and platform updates.</p>
+                                <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
+                                    Specifications
+                                </p>
+                                <ul class="text-start">
+                                    <li>Languages: The web platform uses <a style="color: #2fafff;"
+                                            href="https://phpvms.net/new" target="_blank">phpVMS.net</a>: a
+                                        Lavarel/PHP-based webapp that is used to manage virtual
+                                        airline operations and flights. I customized phpVMS to our needs using HTML/CSS,
+                                        Lavarel, and a
+                                        bit of JavaScript. For the flight tracking program, I contributed to an
+                                        existing,
+                                        open-source
+                                        program written in
+                                        Python to accelerate the project's completion.</li>
+                                    </li>
+                                    <li>Project Duration: July-August 2020, although I am still actively involved in the
+                                        virtual
+                                        airline's operations.</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
+                                    onclick="window.open('https://estafetava.com', '_blank');">View
+                                    Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 justify-content-around align-items-center">
+                        <div class="col-md-4">
+                            <img class="img-fluid card-image" src="./images/brickmash.png"
+                                alt="Atari Breakout screenshot">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title">Brickmash (Atari Breakout)</h2>
+                                <p class="card-text">A simple version of Atari Breakout built in JS several years ago.
+                                    This
+                                    was one of my very first programs and I still enjoy it to this day (despite the
+                                    aging
+                                    code).</p>
+                                <button onclick="window.location.href='./games/brickmash/index.html';"
+                                    class="btn btn-outline-primary hvr-sweep-to-right-blue">Play Game</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 justify-content-around align-items-center">
+                        <div class="col-md-4">
+                            <img class="img-fluid card-image" src="./images/feed-the-ball.jpg"
+                                alt="Feed The Ball screenshot">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title">Feed The Ball</h2>
+                                <p class="card-text">Feed The Ball was my introduction to the world of Unity 3D game
+                                    design
+                                    and C# programming. My goal was to create a simple, yet entertaining, 3D platformer
+                                    and
+                                    later on submitted this project to the College Board for the AP Computer Science
+                                    Principles exam.
+                                </p>
+                                <button onclick="window.location.href='./games/feed-the-ball/index.html';"
+                                    class="btn btn-outline-primary hvr-sweep-to-right-blue">Play Game</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 justify-content-around align-items-center">
+                        <div class="col-md-4">
+                            <img class="img-fluid card-image" src="./images/exivue.png">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title">ExiVue - Existentialism Visualizer</h2>
+                                <p class="card-text">An interactive visualizer on the concept of Existentialism for
+                                    educational or recreational use. I created this project for one of my high school
+                                    teachers to use in her future Language Arts classes.</p>
+                                <button onclick="window.open('https://hcshires.github.io/exivue', '_blank');"
+                                    class="btn btn-outline-primary hvr-sweep-to-right-blue">View Project</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="row h-100 justify-content-center align-items-center text-center text-md-left"
-        style="padding: 25px 0px;">
-        <div class="col-10 col-md-4">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./images/hcshires.png" width="100" height="100" class="d-inline-block align-center"
-                    alt="Henry Shires logo">
-                Henry Shires
-            </a>
-            <hr>
-            <p style="padding-top: 10px;">Site designed by Henry Shires in HTML 5/CSS with Bootstrap</p>
-        </div>
-        <div class="col-md-2 offset-md-4">
-            <p>Sitemap</p>
-            <div class="row">
-                <div class="col-6" style="display: inline;">
-                    <ul
-                        style="display: block; list-style-type: none; list-style-position: inside; margin: 0; padding: 0">
-                        <li>
-                            <a style="color: #2fafff" href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a style="color: #2fafff" href="./contact.html">Contact</a>
-                        </li>
-                        <li>
-                            <a style="color: #2fafff" href="./projects.html">Projects</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6" style="display: inline;">
-                    <ul
-                        style="display: block; list-style-type: none; list-style-position: inside; margin: 0; padding: 0">
-                        <li>
-                            <a style="color: #2fafff" href="./organizations.html">Organizations</a>
-                        </li>
-                        <li>
-                            <a style="color: #2fafff" href="./media.html">Media</a>
-                        </li>
-                        <li>
-                            <a style="color: #2fafff" href="https://github.com/hcshires" target="_blank">GitHub</a>
-                        </li>
-                    </ul>
+        <footer class="row justify-content-center align-items-center text-center text-md-start"
+            style="padding: 25px 0px;">
+            <div class="col-10 col-md-4">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/hcshires.png" width="100" height="100" class="d-inline-block align-center"
+                        alt="Henry Shires logo">
+                    Henry Shires
+                </a>
+                <hr>
+                <p style="padding-top: 10px;">&copy; 2021 Henry Shires<br />Site designed in HTML 5/CSS with Bootstrap
+                </p>
+            </div>
+            <div class="col-md-2 offset-md-4">
+                <p>Sitemap</p>
+                <div class="row">
+                    <div class="col-6" style="display: inline;">
+                        <ul
+                            style="display: block; list-style-type: none; list-style-position: inside; margin: 0; padding: 0">
+                            <li>
+                                <a style="color: #2fafff" href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a style="color: #2fafff" href="./contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a style="color: #2fafff" href="./projects.html">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6" style="display: inline;">
+                        <ul
+                            style="display: block; list-style-type: none; list-style-position: inside; margin: 0; padding: 0">
+                            <li>
+                                <a style="color: #2fafff" href="./organizations.html">Organizations</a>
+                            </li>
+                            <li>
+                                <a style="color: #2fafff" href="./media.html">Media</a>
+                            </li>
+                            <li>
+                                <a style="color: #2fafff" href="https://github.com/hcshires" target="_blank">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
     </div>
 </body>
 

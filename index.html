@@ -14,11 +14,9 @@
         content="Henry Shires, hcshires, henry, shires, portfolio, project page, software, engineering, IT solutions, cinematography">
     <meta property="og:title" content="Henry Shires | Project Portfolio">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://hcshires.github.io/images/portrait.jpg">
+    <meta property="og:image" content="https://hcshires.github.io/images/portfolio.jpg">
     <meta property="og:url" content="https://hcshires.github.io">
     <meta property="og:description" content="View projects, solutions, and work by Henry Shires">
-
-    <title>Henry Shires | Project Portfolio</title>
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -31,6 +29,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-N6DPRZQ');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Page styles -->
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" type="text/css" href="./styles/hover/hover-min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/hover/hover.css" />
@@ -38,12 +37,16 @@
     <link rel="apple-touch-icon" href="./images/favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Fonts and Transitions -->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.min.css" />
+
+    <title>Henry Shires | Project Portfolio</title>
 </head>
 
 <body>
@@ -52,69 +55,66 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="col-12 navbar-row fixed-top" id="index-nav">
-                <div class="col-md-10 offset-md-1">
-                    <nav class="navbar navbar-light navbar-expand-lg">
-                        <a class="navbar-brand verticalAlign" href="./index.html" style="float: left;">
-                            <img src="./images/hcshires.png" height="100" class="d-inline-block align-center"
-                                alt="Henry Shires logo">
-                            <h4 class="d-none d-md-inline">Henry Shires</h4>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="./index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contact.html">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./projects.html">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./organizations.html">Organizations</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./media.html">Media</a>
-                                </li>
-                            </ul>
-                            <button type="button" class="button2 nav-link hvr-sweep-to-right-blue"
-                                onclick="window.open('https://github.com/hcshires', '_blank');">GitHub</button>
-                        </div>
-                    </nav>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/#"><img src="./images/hcshires.png" height="75"
+                    class="d-inline-block align-center" alt="Henry Shires logo">
+                <h4 class="d-none d-md-inline">Henry Shires</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./organizations.html">Organizations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./media.html">Media</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-primary nav-link hvr-sweep-to-right-blue"
+                    onclick="window.open('https://github.com/hcshires', '_blank');">GitHub</button>
             </div>
         </div>
-        <div class="row h-100 section-blue" id="bio" style="padding: 100px 0px;">
-            <div class="col order-2 order-md-1 col-10 col-md-4 offset-1 offset-md-2 verticalAlign ld ld-throw-ltr-in">
-                <h1 style="color: white !important;" class="underline">Oh, hi there<br />I'm<strong> Henry
-                        Shires</strong></h1>
-                <h3 style="color: White !important; padding: 20px 0px;">I'm a future Computer Engineer
-                    who is very much invested in the world of software. I work on websites, webapps, mobile apps, and
-                    integrations involving
-                    numerous APIs. And as an added benefit, I won't hesitate to drop a beat on the drum set.
+    </nav>
+    <div class="container-fluid">
+        <div class="row blue feature justify-content-center align-items-center">
+            <div class="order-2 order-md-1 col-10 col-md-4 ld ld-throw-ltr-in">
+                <h1 style="color: white !important; margin-top: 10px;">Oh, hi there<br />I'm<strong> Henry
+                        Shires</strong><br />><span class="blink" style="color: #2FAFFF;">_</span></h1>
+                <h3 style="color: White !important; margin: 20px 0px;">I'm a future Computer Engineer invested in all
+                    things computers. I have experience with websites, web apps, mobile apps, and APIs and will soon
+                    begin my digital logic and circuits studies. And when I'm not in the lab, I'm most likely grooving
+                    with my buddies in the drumline.
                 </h3>
-                <button type="button" class="button1 hvr-sweep-to-right"
+                <button type="button" class="btn btn-outline-light hvr-sweep-to-right"
                     onclick="window.location.href='./projects.html';">View
                     My Projects</button>
             </div>
-            <div class="col-10 order-1 order-md-2 offset-1 col-md-4 offset-md-0 verticalAlign ld ld-throw-rtl-in">
+            <div class="col-10 order-1 order-md-2 col-md-4 ld ld-throw-rtl-in" style="margin-bottom: 10px;">
                 <img src="./images/profile.jpg" class="img-fluid bordered-img hvr-grow-backward">
             </div>
         </div>
-        <div class="row h-100 text-center justify-content-center">
+        <div class="row text-center justify-content-center">
             <div class="col-12" style="background-color: #f2f2f2; padding: 50px 0px; margin: 50px 0px;">
                 <h1 style="color: #676767; font-weight: bold;">What I Do</h1>
             </div>
-            <div class="col-10">
-                <div class="card-deck">
-                    <div class="card align-items-center" onclick="window.open('./projects.html')">
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-center justify-content-center">
+                <div class="col">
+                    <div class="card h-100 align-items-center" onclick="window.open('./projects.html')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#2FAFFF"
                             class="bi bi-window-sidebar" viewBox="0 0 16 16">
                             <path
@@ -124,13 +124,15 @@
                         </svg>
                         <div class="card-body">
                             <h5 class="card-title">Web & API Development</h5>
-                            <p class="card-text">The majority of my projects involve development on the web, from static
-                                webpages, to dynamic applications utilizing back-end databases and authentication. I am
-                                familiar with a number of frameworks including React and Bootstrap.
+                            <p class="card-text">Most of my projects involve development on the web, from static
+                                webpages to dynamic applications utilizing back-end databases and authentication. I am
+                                familiar with several frameworks, including React and Bootstrap.
                             </p>
                         </div>
                     </div>
-                    <div class="card align-items-center" onclick="window.open('./contact.html')">
+                </div>
+                <div class="col">
+                    <div class="card h-100 align-items-center" onclick="window.open('./contact.html')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#2FAFFF"
                             class="bi bi-tools" viewBox="0 0 16 16">
                             <path
@@ -138,13 +140,15 @@
                         </svg>
                         <div class="card-body">
                             <h5 class="card-title">IT Solutions</h5>
-                            <p class="card-text">I have provided solutions to basic household technical problems to
+                            <p class="card-text">I have provided solutions to basic household technical problems for
                                 numerous people in my local area. My expertise includes computer networking, computer
-                                hardware and basic PC repair, product recommendation, troubleshooting, and fixes for
-                                slowness.</p>
+                                hardware installation, basic PC repair, product recommendations, troubleshooting, and
+                                fixes to improve system performance.</p>
                         </div>
                     </div>
-                    <div class="card align-items-center" onclick="window.open('./media.html')">
+                </div>
+                <div class="col">
+                    <div class="card h-100 align-items-center" onclick="window.open('./media.html')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#2FAFFF"
                             class="bi bi-camera-reels" viewBox="0 0 16 16">
                             <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
@@ -155,68 +159,67 @@
                         <div class="card-body">
                             <h5 class="card-title">Cinematography</h5>
                             <p class="card-text">I make videos for personal enjoyment, class projects, and even online
-                                communities. My works include fine arts elements while attempting to produce them with
-                                professional quality.<br />View my motion reel on my <a href="./media.html"
-                                    style="color: #2FAFFF;">Media
-                                    page.</a>
+                                communities. My works range from informational presentations to cinematic short
+                                films.<br />View my motion reel on my <a href="./media.html"
+                                    style="color: #2FAFFF;">Media page.</a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row h-100" style="margin-bottom: 50px">
+        <div class="row justify-content-center align-items-center" style="margin-bottom: 50px">
             <div class="col-12 text-center" style="background-color: #f2f2f2; padding: 50px 0px; margin: 50px 0px;">
                 <h1 style="color: #676767; font-weight: bold;">About Me</h1>
             </div>
-            <div class="col-10 order-3 offset-1 col-md-4 offset-md-2 verticalAlign">
+            <div class="col-10 col-md-4">
                 <img class="hvr-grow-forward img-fluid" src="./images/iowa.png" style="margin-bottom: 20px;">
             </div>
-            <div class="col-10 order-4 offset-1 col-md-4 offset-md-0 verticalAlign">
+            <div class="col-10 col-md-4">
                 <h2 style="color: #2fafff" class="underline-blue">Iowa Native</h2>
                 <h4 style="color: #676767; padding: 20px 0px;">I'm currently studying Computer Engineering at Iowa State
                     University and have lived in Iowa since day one. I'm a First-Year Honors student and am a part of
                     the
                     Cyclone Marching Band.</h4>
             </div>
-            <div class="order-5 col-12 divider"></div>
-            <div class="order-7 order-md-6 col-10 offset-1  col-md-4 offset-md-2 verticalAlign">
+            <div class="col-12 divider"></div>
+            <div class="col-10 col-md-4">
                 <h2 class="underline-blue" style="color: #2fafff">Skillful</h2>
                 <h4 style="color: #676767; padding: 20px 0px;">I have experience in a number of languages &amp;
                     concepts, have taken AP Computer Science courses, and work with code on a day-to-day basis.</h4>
             </div>
-            <div class="order-6 order-md-7 col-10 offset-1 col-md-4 verticalAlign">
+            <div class="col-10 col-md-4">
                 <img class="feature-img img-fluid hvr-grow-backward" src="./images/languages.png"
                     style="margin-bottom: 20px">
             </div>
-            <div class="order-8 col-12 divider"></div>
-            <div class="order-9 col-10 offset-1 col-md-4 offset-md-2 verticalAlign">
+            <div class="col-12 divider"></div>
+            <div class="col-10 col-md-4">
                 <img class="hvr-grow-forward-2 img-fluid" src="./images/code-ninjas-logo.png"
                     style="margin-bottom: 20px">
             </div>
-            <div class="order-10 col-10 offset-1 offset-md-0 col-md-4 verticalAlign ld ld-throw-rtr-in">
+            <div class="col-10 col-md-4 ld ld-throw-rtr-in">
                 <h2 style="color: #2fafff" class="underline-blue">Experienced</h2>
-                <h4 style="color: #676767; padding: 20px 0px;">I'm employed at a Code Ninjas
-                    franchise&mdash;A center for kids ages 7-14 to learn how to create their own video games and
-                    participate in STEM activites. I assist kids by teaching coding concepts, lead summer camps, and
-                    see
-                    kids' progress through our self-guided cirriculum as they experience the joy of coding.</h4>
+                <h4 style="color: #676767; padding: 20px 0px;">From Summer 2018 to Summer 2021, I was employed at a Code
+                    Ninjas franchise: A center for kids ages 7-14 to learn how to create their video games and
+                    participate in STEM activities. I assisted kids by teaching coding concepts, led summer camps, and
+                    observed kids' progress through a self-guided curriculum as they experienced the joy of coding.
+                </h4>
             </div>
         </div>
-        <div class="row h-100 section-blue justify-content-center align-items-center text-center"
-            style="padding: 100px 0px">
+        <div class="row blue justify-content-center align-items-center text-center" style="padding: 100px 0px">
             <div class="col-10 col-md-6" id="callToAction">
                 <h1 style="color: white;">Interested in my work?</h1>
             </div>
             <div class="col-10 col-md-5">
-                <button type="button" class="button1 hvr-sweep-to-right" style="display: inline; margin-bottom: 10px;"
-                    onclick="window.location.href='./projects.html';">View
+                <button type="button" class="btn btn-outline-light hvr-sweep-to-right"
+                    style="display: inline; margin-bottom: 10px;" onclick="window.location.href='./projects.html';">View
                     My Projects</button>
-                <button type="button" class="button1 hvr-sweep-to-right" style="display: inline; margin-bottom: 10px;"
+                <button type="button" class="btn btn-outline-light hvr-sweep-to-right"
+                    style="display: inline; margin-bottom: 10px;"
                     onclick="window.location.href='./contact.html';">Contact Me</button>
             </div>
         </div>
-        <footer class="row h-100 justify-content-center align-items-center text-center text-md-left"
+        <footer class="row justify-content-center align-items-center text-center text-md-start"
             style="padding: 25px 0px;">
             <div class="col-10 col-md-4">
                 <a class="navbar-brand" href="./index.html">
@@ -225,7 +228,8 @@
                     Henry Shires
                 </a>
                 <hr>
-                <p style="padding-top: 10px;">Site designed by Henry Shires in HTML 5/CSS with Bootstrap</p>
+                <p style="padding-top: 10px;">&copy; 2021 Henry Shires<br />Site designed in HTML 5/CSS with Bootstrap
+                </p>
             </div>
             <div class="col-md-2 offset-md-4">
                 <p>Sitemap</p>
@@ -264,11 +268,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
     </div>
 </body>
