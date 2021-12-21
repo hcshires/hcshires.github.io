@@ -68,25 +68,31 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
+                        <a class="nav-link" href="./experience.html">Experience</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="./projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./organizations.html">Organizations</a>
+                        <a class="nav-link" href="./activities.html">Activities</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./media.html">Media</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://linkedin.com/in/hcshires" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/hcshires" target="_blank"><i
+                                class="bi bi-github"></i></a>
+                    </li>
                 </ul>
-                <button type="button" class="btn btn-outline-primary nav-link hvr-sweep-to-right-blue"
-                    onclick="window.open('https://github.com/hcshires', '_blank');">GitHub</button>
             </div>
         </div>
     </nav>
@@ -100,13 +106,13 @@
             </div>
         </div>
         <div class="container">
-            <div class="row row-cols-1 text-center ld ld-float-btt-in" style="margin: 75px 0">
-                <div class="card mb-3">
+            <div class="row row-cols-1 text-center ld ld-float-btt-in" style="margin-top: 75px">
+                <div id="casmium" class="card mb-3">
                     <div class="row g-0 justify-content-around align-items-center">
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <img class="img-fluid card-image" src="./assets/images/casmium.png">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-6">
                             <div class="card-body">
                                 <h2 class="card-title" style="color: #2fafff">Casmium - Sports Analytics Software</h2>
                                 <p>The original idea for Casmium was initially pitched by my high school baseball
@@ -128,7 +134,7 @@
                                 </p>
                                 <ul class="text-start">
                                     <li>Languages: React.js (website), React Native (mobile app), Node.js (server-side
-                                        code), HTML/CSS
+                                        code), HTML/CSS, Bootstrap
                                     </li>
                                     <li>APIs: Google Firebase (auth, databasing, and hosting), Google Charts (data
                                         visualization)</li>
@@ -144,7 +150,60 @@
                 <div class="card mb-3">
                     <div class="row g-0 justify-content-around align-items-center">
                         <div class="col-md-4">
-                            <img class="img-fluid card-image" src="./assets/images/antivirus.png">
+                            <img class="img-fluid card-image" src="./assets/images/projectdsm.png">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title" style="color: #2fafff">ProjectDSM - Re-creation of<br /> Des
+                                    Moines,
+                                    Iowa in
+                                    Minecraft
+                                </h2>
+                                <p>Sean Eddy, the creator of a realistic re-creation of Downtown Des Moines, Iowa in the
+                                    popular video
+                                    game, Minecraft, invited me to assist him in hosting and marketing his project to
+                                    the
+                                    public. While
+                                    he focuses on his design and 3D, digital modeling, I am primarily involved in
+                                    day-to-day
+                                    management of
+                                    logistics such as web hosting, domain/DNS management, server hosting, and software
+                                    maintenance.
+                                    I've
+                                    programmed a couple of features to make our community feel unique, including a
+                                    plugin to
+                                    sync the
+                                    game's time and
+                                    weather conditions with real-life Des Moines. Our project managed to make our local
+                                    news
+                                    and sparked
+                                    players across Central Iowa to visit Sean's work.</p>
+                                <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
+                                    Specifications
+                                </p>
+                                <ul class="text-start">
+                                    <li>Website: HTML/CSS, Bootstrap</li>
+                                    <li>Minecraft Plugins: Java with the SpigotMC API</li>
+                                    <li>Operations: Domain and DNS Management, 3rd-party Server hosting</li>
+                                    <li>Project Duration: Summer 2017-Present</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
+                                    onclick="window.open('https://projectdsm.org', '_blank');">View Project</button>
+                                <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
+                                    onclick="window.open('https://github.com/ProjectDSM', '_blank');">View Minecraft
+                                    Java Plugins</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="antivirus" class="card mb-3">
+                    <div class="row g-0 justify-content-around align-items-center">
+                        <div class="col-md-4">
+                            <div class="ratio ratio-16x9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A-5-uI3Pwng"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
@@ -174,49 +233,70 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-3">
+                <div id="alaskava" class="card mb-3">
+                    <div class="row g-0 justify-content-around align-items-center">
+                        <div class="col-md-4">
+                            <img class="img-fluid card-image" src="./assets/images/alaskava.jpg">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title">Website - Alaska Virtual Airlines</h2>
+                                <p class="card-text">I was commissioned to design a website for promoting Alaska Virtual
+                                    Airlines: an online community of flight simulator players mimicking the real-world
+                                    operations
+                                    of Alaska Airlines. The website contains information about the airline's operations,
+                                    staff, and how to apply for a virtual pilot position. I developed an intial design
+                                    (that was later tweaked) including live airline statistics linked to
+                                    AlaskaVA's information system. These can be found under the "Creating an Airline"
+                                    section.</p>
+                                <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
+                                    Specifications
+                                </p>
+                                <ul class="text-start">
+                                    <li>Languages: HTML/CSS, Bootstrap, jQuery
+                                    </li>
+                                    <li>Project Duration: July-August 2021</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
+                                    onclick="window.open(`https://alaskava.org`);">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="estafeta" class="card mb-3">
                     <div class="row g-0 justify-content-around align-items-center">
                         <div class="col-md-4">
                             <img class="img-fluid card-image" src="./assets/images/estafeta.png">
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
-                                <h2 class="card-title">Estafeta Virtual Airline - Website and Flight Tracking Program
-                                </h2>
-                                <p style="color: #676767">I was commissioned to create a web platform and flight
-                                    tracking software for a virtual airline&mdash;an online group of people who
-                                    simulate the operations and flights of an airline on a multiplayer flight simulation
-                                    network. The
-                                    airline is based off of the real-life Mexican mail service, Estafeta, and required
-                                    me to
-                                    inherit
-                                    Estafeta's color
-                                    scheme, fleet, and other operations specifics. I am still currently in charge of the
-                                    Estafeta
-                                    Virtual's web
-                                    hosting, website content, and platform updates.</p>
+                                <h2 class="card-title">Website and ACARS Program - Estafeta Virtual Airlines</h2>
+                                <p class="card-text">I was commissioned to manage the IT system of Estafeta Virtual
+                                    Airlines: an online community of flight simulator players
+                                    mimicking the real-world operations of Estafeta Carga Aérea (an air cargo company).
+                                    Each virtual airline requires two software components: An online platform to send
+                                    analytics and perform "airline business" and an Aircraft
+                                    Communication Addressing and Reporting System (ACARS, referring to the systems used
+                                    in real commercial aviation logistics). Customizing an existing open-source
+                                    framework, <a href="https://phpvms.net" target="_blank">phpVMS.net</a>, I developed
+                                    a web presence and pilot portal for Estafeta Virtual to recruit prospective pilots,
+                                    track employee revenue, and manage
+                                    cargo/passenger service. Additionally, I contributed a patch to a work-in-progress,
+                                    open-source <a href="https://github.com/SimSolutions1/xACARS" target="_blank">ACARS
+                                        program by SimSolutions</a>.
+                                    I additionally facilitated hosting and maintaining Estafeta's platform during their
+                                    operation.</p>
                                 <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
                                     Specifications
                                 </p>
                                 <ul class="text-start">
-                                    <li>Languages: The web platform uses <a style="color: #2fafff;"
-                                            href="https://phpvms.net/new" target="_blank">phpVMS.net</a>: a
-                                        Lavarel/PHP-based webapp that is used to manage virtual
-                                        airline operations and flights. I customized phpVMS to our needs using HTML/CSS,
-                                        Lavarel, and a
-                                        bit of JavaScript. For the flight tracking program, I contributed to an
-                                        existing,
-                                        open-source
-                                        program written in
-                                        Python to accelerate the project's completion.</li>
+                                    <li>Languages: Lavarel/PHP (what phpVMS is built on), HTML/CSS, JavaScript, Python
                                     </li>
-                                    <li>Project Duration: July-August 2020, although I am still actively involved in the
-                                        virtual
-                                        airline's operations.</li>
+                                    <li>Project Duration: July-August 2020</li>
                                 </ul>
-                                <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
-                                    onclick="window.open('https://estafetava.com', '_blank');">View
-                                    Project</button>
+                                <button type="button"
+                                    class="btn disabled btn-outline-primary hvr-sweep-to-right-blue">Project
+                                    Unavailable</button>
                             </div>
                         </div>
                     </div>
@@ -224,19 +304,28 @@
                 <div class="card mb-3">
                     <div class="row g-0 justify-content-around align-items-center">
                         <div class="col-md-4">
-                            <img class="img-fluid card-image" src="./assets/images/brickmash.png"
-                                alt="Atari Breakout screenshot">
+                            <img class="img-fluid card-image" src="./assets/images/exivue.png">
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
-                                <h2 class="card-title">Brickmash (Atari Breakout)</h2>
-                                <p class="card-text">A simple version of Atari Breakout built in JS several years ago.
-                                    This
-                                    was one of my very first programs and I still enjoy it to this day (despite the
-                                    aging
-                                    code).</p>
-                                <button onclick="window.location.href='./games/brickmash/index.html';"
-                                    class="btn btn-outline-primary hvr-sweep-to-right-blue">Play Game</a>
+                                <h2 class="card-title">ExiVue - Existentialism Visualizer</h2>
+                                <p class="card-text">An interactive visualizer on the concept of Existentialism for
+                                    educational or recreational use. I created this project for one of my high school
+                                    teachers to use in her future Language Arts classes. I primarily strived for
+                                    conveying this advanced literature and social concept in an interactive, easily
+                                    understandable, and modern format to increase appeal to students and take steps
+                                    towards improving classroom resources.</p>
+                                <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
+                                    Specifications
+                                </p>
+                                <ul class="text-start">
+                                    <li>Languages: Gatsby.js (a toolchain of React.js), Bootstrap
+                                    </li>
+                                    <li>APIs: Framer Motion (complex animations)</li>
+                                    <li>Project Duration: December 2020-January 2021</li>
+                                </ul>
+                                <button onclick="window.open('https://hcshires.github.io/exivue', '_blank');"
+                                    class="btn btn-outline-primary hvr-sweep-to-right-blue">View Project</button>
                             </div>
                         </div>
                     </div>
@@ -257,6 +346,15 @@
                                     later on submitted this project to the College Board for the AP Computer Science
                                     Principles exam.
                                 </p>
+                                <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
+                                    Specifications
+                                </p>
+                                <ul class="text-start">
+                                    <li>Language: Unity Engine with C#
+                                    </li>
+                                    <li>Project Duration: Started February 2019, resumed and completed for AP Computer
+                                        Science Principles in May 2019</li>
+                                </ul>
                                 <button onclick="window.location.href='./games/feed-the-ball/index.html';"
                                     class="btn btn-outline-primary hvr-sweep-to-right-blue">Play Game</button>
                             </div>
@@ -266,16 +364,26 @@
                 <div class="card mb-3">
                     <div class="row g-0 justify-content-around align-items-center">
                         <div class="col-md-4">
-                            <img class="img-fluid card-image" src="./assets/images/exivue.png">
+                            <img class="img-fluid card-image" src="./assets/images/brickmash.png"
+                                alt="Atari Breakout screenshot">
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
-                                <h2 class="card-title">ExiVue - Existentialism Visualizer</h2>
-                                <p class="card-text">An interactive visualizer on the concept of Existentialism for
-                                    educational or recreational use. I created this project for one of my high school
-                                    teachers to use in her future Language Arts classes.</p>
-                                <button onclick="window.open('https://hcshires.github.io/exivue', '_blank');"
-                                    class="btn btn-outline-primary hvr-sweep-to-right-blue">View Project</button>
+                                <h2 class="card-title">Brickmash (Atari Breakout)</h2>
+                                <p class="card-text">A simple version of Atari Breakout I built several years ago as a
+                                    part of my middle school's Hyperstream club.
+                                    This was one of my very first programs and I still enjoy it to this day despite its
+                                    age.
+                                </p>
+                                <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
+                                    Specifications
+                                </p>
+                                <ul class="text-start">
+                                    <li>Language: The purest form of JavaScript in the world
+                                    </li>
+                                </ul>
+                                <button onclick="window.location.href='./games/brickmash/index.html';"
+                                    class="btn btn-outline-primary hvr-sweep-to-right-blue">Play Game</a>
                             </div>
                         </div>
                     </div>
@@ -297,6 +405,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col" style="margin: 37.5px;">
+                    <p>For source code and additional technicalities, please <a href="https://github.com/hcshires/"
+                            target="_blank">visit my GitHub
+                            page</a>.</p>
                 </div>
             </div>
         </div>
@@ -322,7 +435,7 @@
                                 <a style="color: #2fafff" href="./index.html">Home</a>
                             </li>
                             <li>
-                                <a style="color: #2fafff" href="./contact.html">Contact</a>
+                                <a style="color: #2fafff" href="./experience.html">Experience</a>
                             </li>
                             <li>
                                 <a style="color: #2fafff" href="./projects.html">Projects</a>
@@ -333,13 +446,10 @@
                         <ul
                             style="display: block; list-style-type: none; list-style-position: inside; margin: 0; padding: 0">
                             <li>
-                                <a style="color: #2fafff" href="./organizations.html">Organizations</a>
+                                <a style="color: #2fafff" href="./activities.html">Activities</a>
                             </li>
                             <li>
                                 <a style="color: #2fafff" href="./media.html">Media</a>
-                            </li>
-                            <li>
-                                <a style="color: #2fafff" href="https://github.com/hcshires" target="_blank">GitHub</a>
                             </li>
                         </ul>
                     </div>
