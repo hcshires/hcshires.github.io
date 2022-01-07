@@ -1,30 +1,30 @@
-var canvas = document.getElementById("brickmash");
-var ctx = canvas.getContext("2d");
+const canvas = document.getElementById("brickmash");
+const ctx = canvas.getContext("2d");
 
 ctx.canvas.width = canvas.clientWidth;
 ctx.canvas.height = window.innerHeight;
 
-var ballRadius = 10;
-var x = canvas.width / 2;
-var y = canvas.height - 30;
-var dx = 3;
-var dy = -3;
-var paddleHeight = 10;
-var paddleWidth = 100;
-var paddleX = (canvas.width - paddleWidth) / 2;
-var rightPressed = false;
-var leftPressed = false;
-var brickRowCount = 14;
-var brickColumnCount = 14;
-var brickWidth = 75;
-var brickHeight = 20;
-var brickPadding = 10;
-var brickOffsetTop = 30;
-var brickOffsetLeft = 30;
-var score = 0;
-var lives = 3;
+let ballRadius = 10;
+let x = canvas.width / 2;
+let y = canvas.height - 30;
+let dx = 3;
+let dy = -3;
+let paddleHeight = 10;
+let paddleWidth = 100;
+let paddleX = (canvas.width - paddleWidth) / 2;
+let rightPressed = false;
+let leftPressed = false;
+let brickRowCount = 14;
+let brickColumnCount = 14;
+let brickWidth = 75;
+let brickHeight = 20;
+let brickPadding = 10;
+let brickOffsetTop = 30;
+let brickOffsetLeft = 30;
+let score = 0;
+let lives = 3;
 
-var bricks = [];
+let bricks = [];
 for (c = 0; c < brickColumnCount; c++) {
 	bricks[c] = [];
 	for (r = 0; r < brickRowCount; r++) {
@@ -32,10 +32,10 @@ for (c = 0; c < brickColumnCount; c++) {
 	}
 }
 
-var wrongSound = new Audio("./sounds/wrong.mp3");
-var youLose = new Audio("./sounds/sadtrombone.mp3");
-var shotgun = new Audio("./sounds/gun.mp3");
-var atomic = new Audio("./sounds/bomb.mp3");
+const wrongSound = new Audio("./sounds/wrong.mp3");
+const youLose = new Audio("./sounds/sadtrombone.mp3");
+const shotgun = new Audio("./sounds/gun.mp3");
+const atomic = new Audio("./sounds/bomb.mp3");
 
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
@@ -58,7 +58,7 @@ function keyUpHandler(e) {
 }
 
 function mouseMoveHandler(e) {
-	var relativeX = e.clientX - canvas.offsetLeft;
+	let relativeX = e.clientX - canvas.offsetLeft;
 	if (relativeX > 0 && relativeX < canvas.width) {
 		paddleX = relativeX - paddleWidth / 2;
 	}
@@ -67,7 +67,7 @@ function mouseMoveHandler(e) {
 function collisionDetection() {
 	for (c = 0; c < brickColumnCount; c++) {
 		for (r = 0; r < brickRowCount; r++) {
-			var b = bricks[c][r];
+			let b = bricks[c][r];
 			if (b.status == 1) {
 				if (
 					x > b.x &&
@@ -77,7 +77,7 @@ function collisionDetection() {
 				) {
 					dy = -dy;
 					b.status = 0;
-					var nShotgun = shotgun.cloneNode();
+					let nShotgun = shotgun.cloneNode();
 					nShotgun.play();
 					score++;
 					if (score == brickRowCount * brickColumnCount) {
@@ -111,8 +111,8 @@ function drawBricks() {
 	for (c = 0; c < brickColumnCount; c++) {
 		for (r = 0; r < brickRowCount; r++) {
 			if (bricks[c][r].status == 1) {
-				var brickX = r * (brickWidth + brickPadding) + brickOffsetLeft;
-				var brickY = c * (brickHeight + brickPadding) + brickOffsetTop;
+				let brickX = r * (brickWidth + brickPadding) + brickOffsetLeft;
+				let brickY = c * (brickHeight + brickPadding) + brickOffsetTop;
 				bricks[c][r].x = brickX;
 				bricks[c][r].y = brickY;
 				ctx.beginPath();

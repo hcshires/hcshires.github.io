@@ -133,7 +133,7 @@
                 <div id="codeninjas" class="card mb-3">
                     <div class="row g-0 justify-content-around align-items-center">
                         <div class="col-md-4">
-                            <img class="img-fluid card-image" src="./assets/images/code-ninjas-logo.png">
+                            <img class="img-fluid card-image" src="./assets/images/code-ninjas-logo.jpg">
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
@@ -175,9 +175,9 @@
                                 <h2 class="card-title" style="color: #2fafff">Bachelor of Science, Computer
                                     Engineering<br />Iowa State University</h2>
                                 <h5 style="color: #2fafff; font-weight: bold;">August 2021 - Present</h5>
-                                <p>Activities and Societies: University Honors Program
-                                    ISU Cyclone Football "Varsity" Marching Band
-                                    Creative Development Chair, Friley Hall Niles-Foster House.</p>
+                                <p>Activities and Societies: University Honors Program,
+                                    ISU Cyclone Football "Varsity" Marching Band,
+                                    Creative Development Chair: Friley Hall Niles-Foster House.</p>
                             </div>
                         </div>
                     </div>
@@ -207,9 +207,10 @@
                 <h4 style="color: white;">File type PDF, last updated September 20th, 2021</h4>
             </div>
             <div class="col-10 col-md-4 text-end">
-                <img src="./assets/images/resume.jpg" style="cursor: pointer;"
-                    class="img-fluid bordered-img hvr-grow-backward"
-                    onclick="window.open('./assets/files/resume-09-20-21.pdf', '_blank');" />
+                <button type="button" class="btn" style="padding: 0;" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Click me!" onclick="window.open('./assets/files/resume-09-20-21.pdf', '_blank');">
+                    <img src="./assets/images/resume.jpg" class="img-fluid bordered-img hvr-grow-backward" />
+                </button>
             </div>
         </div>
         <footer class="row justify-content-center align-items-center text-center text-md-start"
@@ -218,10 +219,10 @@
                 <a class="navbar-brand" href="./index.html">
                     <img src="./assets/images/hcshires.png" width="100" height="100" class="d-inline-block align-center"
                         alt="Henry Shires logo">
-                    Henry Shires
+                    <h4 class="d-inline">Henry Shires</h4>
                 </a>
                 <hr>
-                <p style="padding-top: 10px;">&copy; 2021 Henry Shires<br />Site designed in HTML 5/CSS with Bootstrap
+                <p style="padding-top: 10px;">&copy; 2022 Henry Shires<br />Site designed in HTML 5/CSS with Bootstrap
                 </p>
             </div>
             <div class="col-md-2 offset-md-4">
@@ -231,13 +232,13 @@
                         <ul
                             style="display: block; list-style-type: none; list-style-position: inside; margin: 0; padding: 0">
                             <li>
-                                <a style="color: #2fafff" href="./index.html">Home</a>
+                                <a href="./index.html">Home</a>
                             </li>
                             <li>
-                                <a style="color: #2fafff" href="./experience.html">Experience</a>
+                                <a href="./experience.html">Experience</a>
                             </li>
                             <li>
-                                <a style="color: #2fafff" href="./projects.html">Projects</a>
+                                <a href="./projects.html">Projects</a>
                             </li>
                         </ul>
                     </div>
@@ -245,10 +246,10 @@
                         <ul
                             style="display: block; list-style-type: none; list-style-position: inside; margin: 0; padding: 0">
                             <li>
-                                <a style="color: #2fafff" href="./activities.html">Activities</a>
+                                <a href="./activities.html">Activities</a>
                             </li>
                             <li>
-                                <a style="color: #2fafff" href="./media.html">Media</a>
+                                <a href="./media.html">Media</a>
                             </li>
                         </ul>
                     </div>
@@ -261,6 +262,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
     </div>
 </body>
 
