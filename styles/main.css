@@ -9,6 +9,9 @@ body {
 
 h1,
 h3,
+h4,
+h5,
+h6,
 p,
 ul {
   color: #676767;
@@ -18,6 +21,7 @@ ul {
   font-weight: bold;
 }
 
+h5 a,
 p a,
 footer a {
   color: #2fafff;
