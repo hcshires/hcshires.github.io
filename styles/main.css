@@ -139,8 +139,19 @@ a:hover {
   border-radius: 8px;
 }
 
+.bordered-img-blue {
+  position: relative;
+  box-shadow: 10px 10px 10px #c4c4c4 !important;
+  border: 5px solid #2fafff;
+  border-radius: 8px;
+}
+
 .bordered-img:hover {
   box-shadow: 20px 20px 20px #008ee6 !important;
+}
+
+.bordered-img-blue:hover {
+  box-shadow: 20px 20px 20px #c4c4c4 !important;
 }
 
 #brickmash {
@@ -152,7 +163,7 @@ a:hover {
 
 .card {
   padding: 25px 0px;
-  border-radius: 8px !important;
+  border-radius: 8px;
   transition: ease 0.25s;
 }
 
@@ -192,20 +203,20 @@ li.timeline-item:hover {
   font-size: 2.5em;
 }
 
-.typewriter {
+.typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.1em solid white; /* The typwriter cursor */
+  border-right: 0.05em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  letter-spacing: auto; /* Adjust as needed */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 .blink {
-  border-bottom: 0.05em solid white; /* The typwriter cursor */
+  border-bottom: 0.05em solid #2fafff; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: blink-caret 0.75s step-end infinite;
+  animation: blink-caret-blue 0.75s step-end infinite;
 }
 
 /* The typing effect */
@@ -226,6 +237,17 @@ li.timeline-item:hover {
   }
   50% {
     border-color: white;
+  }
+}
+
+/* The typewriter cursor effect -blue */
+@keyframes blink-caret-blue {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #2fafff;
   }
 }
 
@@ -294,4 +316,23 @@ li.timeline-item::before {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+.carousel .carousel-item {
+  height: calc(100vh - 100px);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+.carousel-content {
+  width: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
