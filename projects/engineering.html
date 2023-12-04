@@ -141,15 +141,16 @@
                                     Specifications
                                 </p>
                                 <ul class="text-start">
-                                    <li>Languages: React.js (analytics web app), React Native (game collection mobile
+                                    <li>Languages: React.js (analytics web app), React Native (score-keeping mobile
                                         app), Node.js (server-side code for API and calculations), HTML/CSS
                                     </li>
-                                    <li>APIs: Google Firebase (auth, databasing, and hosting), Google Charts (data
+                                    <li>APIs: Google Firebase (auth, functions, databasing, and hosting), Google Charts
+                                        (data
                                         visualization)</li>
                                     <li>Business Duration: February 2020-Present</li>
                                 </ul>
                                 <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
-                                    onclick="window.open('https://casmium.com', '_blank');">Learn More</button>
+                                    onclick="window.open('https://casmium.com', '_blank');">Visit Our Website</button>
                                 <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
                                     onclick="window.open('../experience.html', '_self');">See Work Experience</button>
                             </div>
@@ -169,35 +170,44 @@
                                 <p>CySat is Iowa State's NASA CubeSat program designed for students of all engineering
                                     majors to gain experience with astronautics and solve real-world scientific
                                     problems. NASA provides educational institutions with a partnership to create a
-                                    working
-                                    satellite that serves a particular mission to benefit NASA in exchange for a free
+                                    working satellite with a NASA-given mission in exchange for a free
                                     launch to space. At ISU, CySat's current mission (CySAT-1) is responsible
-                                    for measuring soil moisture content in 1 km^2 areas as the satellite orbits the
-                                    Earth. This mission has been developing at ISU for nearly ten years, with the
-                                    final launch handoff anticipated for March 2024.<br /><br />I'm excited for the
-                                    opportunity to work towards finally propelling this decade-old project filled with
-                                    current and previous students' hard work to space, specifically with preparing the
-                                    software systems to function properly and legally during and after the ride to the
-                                    ISS, where the satellite will begin its orbit. These tasks include the start-up of
-                                    various subsystems, establishing a radio beacon, and continuously sending telemetry
-                                    information to our on-campus ground station until the end of its 3-6 month
-                                    life.
+                                    for measuring soil moisture content using a software-defined radio (SDR) in Low
+                                    Earth Orbit (LEO). CySAT-1 has been in development at ISU for nearly 10 years,
+                                    with the final launch handoff anticipated for Summer 2024.<br /><br />During my time
+                                    on the project, I helped integrate software with the satellite electronics to
+                                    carry out the mission in space. My work included updating, troubleshooting, and
+                                    documenting embedded
+                                    code on the satellite's mission computer and creating a radio
+                                    communication link between the satellite and the ground. The communication link uses
+                                    an ameteur radio frequency to send AX.25 packets between an onboard UHF transceiver
+                                    and an SDR on the ground. These packets contain either ground station command
+                                    requests and satellite responses or the satellite returning soil
+                                    moisture measurement data. For a detailed description of this communication link,
+                                    see
+                                    my technical report below.
                                 </p>
                                 <p class="text-start" style="color: #2fafff; font-weight: bold;">Technical
                                     Specifications
                                 </p>
                                 <ul class="text-start">
-                                    <li>Program Duration: August 2022-August 2023</li>
+                                    <li>Project Duration: August 2022-August 2023</li>
                                     <li>Experiences: Collaboration with interdisciplinary engineers, hands-on embedded
                                         systems engineering</li>
-                                    <li>Technologies: EnduroSat On-board Computer (OBC) with STM32 Microcontroller,
-                                        Attitude Determination and Control System (ADCS), UHF antenna and transceiver,
-                                        Electrical Power System (EPS), and solar cells</li>
+                                    <li>Technologies: EnduroSat space-rated CubeSat hardware (Onboard Computer (OBC),
+                                        UHF
+                                        Transceiver, and Electrical Power System (EPS), and Antenna), STM32
+                                        Microcontroller, Serial/UART unit
+                                        for
+                                        the OBC, N200 Software-Defined Radio paired with GNU Radio modules</li>
                                     <li>Languages: C, Python</li>
                                 </ul>
                                 <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
-                                    onclick="window.open('https://m2i.aere.iastate.edu/cysat', '_blank');">Learn
-                                    More</button>
+                                    onclick="window.open('https://m2i.aere.iastate.edu/cysat', '_blank');">Visit Project
+                                    Website</button>
+                                <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
+                                    onclick="window.open('../assets/files/cysat-report.pdf', '_blank');">Read
+                                    Report</button>
                             </div>
                         </div>
                     </div>
@@ -280,8 +290,9 @@
                                 <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
                                     onclick="window.open('../assets/files/288-proposal.pdf', '_blank');">Read
                                     Proposal</button>
-                                <button type="button" class="btn disabled btn-outline-primary hvr-sweep-to-right-blue"
-                                    onclick="window.open('', '_blank');">Source Code pending</button>
+                                <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
+                                    onclick="window.open('https://github.com/hcshires/CPRE-288-CyRide', '_blank');">View
+                                    Source Code</button>
                             </div>
                         </div>
                     </div>
@@ -316,7 +327,8 @@
                                 <ul class="text-start">
                                     <li>Languages: Verilog HDL
                                     </li>
-                                    <li>Technologies: Teraisc Altera DE2-115 (Cyclone IV) FPGA Board, Intel Quartus
+                                    <li>Technologies: Teraisc Altera DE2-115 (Cyclone IV) FPGA Board, Intel (Altera)
+                                        Quartus
                                         Prime FPGA Design Software, Questa ModelSim
                                         (Waveform Analysis)</li>
                                     <li>Class Duration: Spring 2022</li>
@@ -324,9 +336,6 @@
                                 <button type="button" class="btn btn-outline-primary hvr-sweep-to-right-blue"
                                     onclick="window.open('../assets/files/281-report.pdf', '_blank');">Read
                                     Report</button>
-                                <button type="button" class="btn disabled btn-outline-primary hvr-sweep-to-right-blue"
-                                    onclick="window.open('https://github.com/hcshires/CPRE-281', '_blank');">CAD
-                                    Files pending</button>
                             </div>
                         </div>
                     </div>
